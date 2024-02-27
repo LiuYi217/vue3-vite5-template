@@ -1,4 +1,5 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"]
+  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router$"],
+  "http.proxyAuthorization": "false",
 }

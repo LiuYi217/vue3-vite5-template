@@ -3,6 +3,7 @@
     <h1>Hello world</h1>
     <p>Mouse position: {{ x }}, {{ y }}</p>
     <p v-if="isOutside">Mouse is outside</p>
+    <HelloWorld></HelloWorld>
   </div>
 </template>
 
