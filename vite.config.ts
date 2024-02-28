@@ -8,6 +8,7 @@ import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
+import { viteMockServe } from 'vite-plugin-mock'
 import Layouts from 'vite-plugin-vue-layouts'
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -47,6 +48,11 @@ export default defineConfig({
     Layouts({
       layoutsDirs: 'src/layouts',
       defaultLayout: 'default'
+    }),
+    viteMockServe({
+      // default
+      mockPath: 'mock',
+      enable: true
     })
   ],
   resolve: {
