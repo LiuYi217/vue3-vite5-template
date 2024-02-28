@@ -10,6 +10,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import { viteMockServe } from 'vite-plugin-mock'
 import Layouts from 'vite-plugin-vue-layouts'
+import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -53,7 +54,8 @@ export default defineConfig({
       // default
       mockPath: 'mock',
       enable: true
-    })
+    }),
+    VitePWA()
   ],
   resolve: {
     alias: {
